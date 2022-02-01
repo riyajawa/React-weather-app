@@ -8,8 +8,8 @@ countries.registerLocale(require('i18n-iso-countries/langs/en.json'));
 function App() {
   // State
   const [apiData, setApiData] = useState({});
-  const [getState, setGetState] = useState('tamilnadu');
-  const [state, setState] = useState('tamilnadu');
+  const [getState, setGetState] = useState('haryana');
+  const [state, setState] = useState('haryana');
 
   // API KEY AND URL
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -36,11 +36,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="d-flex justify-content-center align-items-center">
+      <header className="heading">
         <h2>React Weather App</h2>
       </header>
       <div className="container">
-        <div className="mt-3 d-flex flex-column justify-content-center align-items-center">
+        <div className="cont">
           <div class="col-auto">
             <label for="location-name" class="col-form-label">
               Enter Location :
@@ -114,15 +114,6 @@ function App() {
           )}
         </div>
       </div>
-      <footer className="footer">
-        <code>
-          Created by{' '}
-          <a href="https://github.com/imshines" target="none">
-            imshines
-          </a>{' '}
-          using React
-        </code>
-      </footer>
     </div>
   );
 }
